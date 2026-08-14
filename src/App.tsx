@@ -9,34 +9,34 @@ const navigationItems = [
 
 const mapFeatures = [
   {
-    title: "전국 지도를 한눈에",
-    description: "지역을 옮겨 다니며 가까운 라멘집을 찾아보세요.",
+    title: "전국 라멘집을 찾아보고",
+    description: "전국 어디서든 가까운 라멘집을 찾아보세요.",
   },
   {
-    title: "취향대로 골라보기",
-    description: "쇼유, 시오, 이에케 등 원하는 취향대로 탐색하세요.",
+    title: "좋아하는 장르로 고르고",
+    description: "쇼유·시오·이에케 등 좋아하는 장르로 골라보세요.",
   },
   {
-    title: "매장 정보를 한눈에",
-    description: "웨이팅 정보부터 매장 정보까지",
+    title: "가기 전 필요한 정보까지",
+    description: "운영시간과 웨이팅 정보를 한 번에 확인하세요.",
   },
 ];
 
 const exploreFeatures = [
   {
     number: "01",
-    title: "지역을 선택하고",
-    description: "전국에서 지금 가고 싶은 동네를 먼저 살펴봅니다.",
+    title: "동네를 고르고",
+    description: "가고 싶은 지역을 먼저 골라보세요.",
   },
   {
     number: "02",
-    title: "지도에서 탐색하고",
-    description: "지도 위에 모인 라멘집 사이에서 다음 목적지를 찾습니다.",
+    title: "라멘집을 둘러보고",
+    description: "지도에 모인 라멘집을 비교하며 다음 가게를 찾아보세요.",
   },
   {
     number: "03",
-    title: "오늘의 라멘을 정하고",
-    description: "검색창과 여러 앱을 오가는 시간을 줄이고 바로 골라보세요.",
+    title: "오늘의 한 그릇을 고르고",
+    description: "여러 검색창을 오가지 않고 라맵에서 바로 결정하세요.",
   },
 ];
 
@@ -97,9 +97,9 @@ export default function App() {
                 <span className="hero-title-brand">라맵</span>
               </h1>
               <p className="hero-lead">
-                전국의 모든 라멘집부터
+                전국 라멘집을 지도에서 찾고
                 <br />
-                다양한 이벤트까지 모든 정보를 찾아보세요.
+                다양한 이벤트 소식까지 확인하세요.
               </p>
               <div className="hero-actions">
                 <StoreButton />
@@ -134,9 +134,9 @@ export default function App() {
             <div className="section-copy">
               <p className="eyebrow">01 / MAP FIRST</p>
               <h2 id="map-title">
-                찾고 싶은 라멘집을
+                오늘 갈 라멘집을
                 <br />
-                지도에서 바로
+                지도에서 찾고
               </h2>
               <ul className="feature-list">
                 {mapFeatures.map((feature) => (
@@ -172,8 +172,9 @@ export default function App() {
               <div>
                 <p className="eyebrow">02 / EXPLORE</p>
                 <h2 id="discover-title">
-                  대한민국 구석구석 방방곡곡
+                  오늘은 어느 동네에서
                   <br />
+                  라멘을 먹을까요?
                 </h2>
               </div>
             </div>
@@ -221,11 +222,12 @@ export default function App() {
             <div className="section-copy section-copy--light">
               <p className="eyebrow">03 / RANKING</p>
               <h2 id="ranking-title">
-                지역별 인기 라멘집이 궁금하다면 ?
+                이 동네에서 가장 많이 찾는
+                <br />
+                라멘집은?
               </h2>
               <p className="ranking-description">
-                지도에서 발견한 라멘집을 지역별 랭킹으로 다시 만나보세요. 다음
-                방문의 기준이 하나 더 생깁니다.
+                지도에서 찾은 라멘집을 지역별 인기 순위로 확인해 보세요. 다음
               </p>
             </div>
           </div>
@@ -237,14 +239,14 @@ export default function App() {
               <div>
                 <p className="eyebrow">04 / EVENTS</p>
                 <h2 id="events-title">
-                  한정 메뉴와 이벤트도,
+                  새로운 메뉴와 이벤트 소식을
                   <br />
-                  라멘 지도 안에서.
+                  한곳에서 확인하세요.
                 </h2>
               </div>
               <p>
-                진행 중인 이벤트와 예정된 소식을 확인하고, 마음에 남은 한 그릇을
-                놓치지 마세요.
+                진행 중인 행사부터 곧 시작될 한정 메뉴까지, 라멘집의 소식을
+                한곳에서 확인하세요.
               </p>
             </div>
 
@@ -266,7 +268,7 @@ export default function App() {
                 <div className="screen-frame screen-frame--event">
                   <img
                     src="assets/ramap-kakikoujo-event-detail.png"
-                    alt="라맵 이벤트 상세 화면. 칸사이 쇼유 츠케멘 행사 장소와 날짜, 내용을 보여주는 현재 앱 화면."
+                    alt="라맵 이벤트 상세 화면. 카키코우죠 행사 장소와 날짜, 내용을 보여주는 앱 화면."
                     loading="lazy"
                   />
                 </div>
@@ -285,7 +287,7 @@ export default function App() {
               <div className="download-visual">
                 <img
                   src="assets/ramap-product-hero.png"
-                  alt="랭킹, 지도, 이벤트 화면으로 라맵의 주요 기능을 보여주는 제품 이미지"
+                  alt="랭킹·지도·이벤트 화면을 담은 라맵 제품 이미지"
                   width={1672}
                   height={941}
                   loading="lazy"
@@ -293,11 +295,11 @@ export default function App() {
               </div>
               <div className="download-copy">
                 <h2 id="download-title">
-                  다음 라멘은
+                  다음 라멘집
                   <br />
-                  라맵에서 찾아보세요.
+                  라맵에서 찾으세요.
                 </h2>
-                <p>대한민국 라멘지도를 손안에 담아보세요.</p>
+                <p>대한민국 라멘집을 한곳에서 찾아보세요.</p>
                 <div className="download-actions">
                   <StoreButton />
                   <span className="platform-note">Android 출시 준비 중</span>
