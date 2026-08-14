@@ -10,8 +10,8 @@ const navigationItems = [
 
 const mapFeatures = [
   {
-    title: "전국 지도를 한눈에",
-    description: "지역을 옮겨 다니며 가까운 라멘집을 찾아보세요.",
+    title: "전국 라멘 매장을 한눈에",
+    description: "지도를 통해 전국의 모든 라멘집을 찾아보세요.",
   },
   {
     title: "취향대로 골라보기",
@@ -27,7 +27,7 @@ const exploreFeatures = [
   {
     number: "01",
     title: "지역을 선택하고",
-    description: "전국에서 지금 가고 싶은 동네를 먼저 살펴봅니다.",
+    description: "전국에서 원하는 동네를 먼저 살펴봅니다.",
   },
   {
     number: "02",
@@ -133,7 +133,6 @@ export default function App() {
         <section className="section section-map" id="map" aria-labelledby="map-title">
           <div className="page-shell section-grid">
             <div className="section-copy">
-              <p className="eyebrow">01 / MAP FIRST</p>
               <h2 id="map-title">
                 찾고 싶은 라멘집을
                 <br />
