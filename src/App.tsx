@@ -1,5 +1,6 @@
 const appStoreUrl = "https://apps.apple.com/kr/app/%EB%9D%BC%EB%A7%B5/id6797046935";
 
+
 const navigationItems = [
   { href: "#map", label: "지도" },
   { href: "#discover", label: "탐색" },
@@ -132,7 +133,6 @@ export default function App() {
         <section className="section section-map" id="map" aria-labelledby="map-title">
           <div className="page-shell section-grid">
             <div className="section-copy">
-              <p className="eyebrow">01 / MAP FIRST</p>
               <h2 id="map-title">
                 오늘 갈 라멘집을
                 <br />
