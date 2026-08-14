@@ -1,5 +1,6 @@
 const appStoreUrl = "https://apps.apple.com/kr/app/%EB%9D%BC%EB%A7%B5/id6797046935";
 
+
 const navigationItems = [
   { href: "#map", label: "지도" },
   { href: "#discover", label: "탐색" },
