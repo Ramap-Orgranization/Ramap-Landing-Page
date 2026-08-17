@@ -167,7 +167,8 @@ button:focus-visible {
   flex: 0 0 auto;
   width: 28px;
   height: 28px;
-  fill: currentColor;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
 }
 
 .store-copy {
