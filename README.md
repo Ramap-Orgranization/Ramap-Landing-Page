@@ -1,6 +1,6 @@
 # Ramap Landing Page
 
-대한민국 라멘 지도, 라맵을 소개하는 React + TypeScript + Vite 정적 랜딩 페이지입니다.
+대한민국 라멘 지도, 라멥을 소개하는 React + TypeScript + Vite 정적 랜딩 페이지입니다.
 
 ## 실행
 

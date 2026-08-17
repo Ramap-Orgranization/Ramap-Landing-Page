@@ -38,7 +38,7 @@ const exploreFeatures = [
   {
     number: "03",
     title: "오늘의 한 그릇을 고르고",
-    description: "여러 검색창을 오가지 않고 라맵에서 바로 결정하세요.",
+    description: "여러 검색창을 오가지 않고 라멥에서 바로 결정하세요.",
   },
 ];
 
@@ -57,7 +57,7 @@ function StoreButton({
       href={isAppStore ? appStoreUrl : googlePlayUrl}
       target="_blank"
       rel="noreferrer"
-      aria-label={isAppStore ? "App Store에서 라맵 다운로드" : "Google Play에서 라맵 다운로드"}
+      aria-label={isAppStore ? "App Store에서 라멥 다운로드" : "Google Play에서 라멥 다운로드"}
     >
       <img
         className="store-icon"
@@ -82,9 +82,9 @@ export default function App() {
 
       <header className="site-header">
         <div className="page-shell header-inner">
-          <a className="brand" href="#top" aria-label="라맵 홈">
+          <a className="brand" href="#top" aria-label="라멥 홈">
             <img src="assets/ramap-icon.png" alt="" />
-            <span>라맵</span>
+            <span>라멥</span>
           </a>
 
           <nav className="site-nav" aria-label="주요 메뉴">
@@ -107,7 +107,7 @@ export default function App() {
             <div className="hero-copy">
               <h1 id="hero-title">
                 <span className="hero-title-line">대한민국 라멘지도</span>
-                <span className="hero-title-brand">라맵</span>
+                <span className="hero-title-brand">라멥</span>
               </h1>
               <p className="hero-lead">
                 전국 라멘집을 지도에서 찾고
@@ -118,7 +118,7 @@ export default function App() {
                 <StoreButton />
                 <StoreButton store="google-play" />
               </div>
-              <ul className="hero-points" aria-label="라맵의 주요 기능">
+              <ul className="hero-points" aria-label="라멥의 주요 기능">
                 <li>
                   <span>01</span> 전국 라멘집 지도
                 </li>
@@ -135,7 +135,7 @@ export default function App() {
               <div className="hero-device__frame">
                 <img
                   src="assets/01-map.png"
-                  alt="라맵 앱 지도 화면. 지도 위에 여러 라멘집 위치가 표시되어 있다."
+                  alt="라멥 앱 지도 화면. 지도 위에 여러 라멘집 위치가 표시되어 있다."
                 />
               </div>
             </figure>
@@ -170,7 +170,7 @@ export default function App() {
               <figure className="screen-frame screen-frame--map">
                 <img
                   src="assets/01-map.png"
-                  alt="라맵 지도 화면. 지도 위에 여러 라멘집 위치가 표시되어 있다."
+                  alt="라멥 지도 화면. 지도 위에 여러 라멘집 위치가 표시되어 있다."
                   loading="lazy"
                 />
               </figure>
@@ -211,7 +211,7 @@ export default function App() {
                 <div className="screen-frame screen-frame--bottom-sheet">
                   <img
                     src="assets/ramap-physical-current.png"
-                    alt="라맵 지도 위에 실제 매장 상세 바텀시트가 열린 화면."
+                    alt="라멥 지도 위에 실제 매장 상세 바텀시트가 열린 화면."
                     loading="lazy"
                   />
                 </div>
@@ -226,7 +226,7 @@ export default function App() {
               <figure className="screen-frame screen-frame--ranking">
                 <img
                   src="assets/02-ranking.png"
-                  alt="라맵 랭킹 화면. 지역별 라멘집 목록이 순위로 표시되어 있다."
+                  alt="라멥 랭킹 화면. 지역별 라멘집 목록이 순위로 표시되어 있다."
                   loading="lazy"
                 />
               </figure>
@@ -267,7 +267,7 @@ export default function App() {
                 <div className="screen-frame screen-frame--event">
                   <img
                     src="assets/events-device.png"
-                    alt="라맵 이벤트 화면. 여름 한정, 오늘 진행 중, 진행 예정 이벤트가 보이는 현재 앱 화면."
+                    alt="라멥 이벤트 화면. 여름 한정, 오늘 진행 중, 진행 예정 이벤트가 보이는 현재 앱 화면."
                     loading="lazy"
                   />
                 </div>
@@ -280,7 +280,7 @@ export default function App() {
                 <div className="screen-frame screen-frame--event">
                   <img
                     src="assets/ramap-kakikoujo-event-detail.png"
-                    alt="라맵 이벤트 상세 화면. 카키코우죠 행사 장소와 날짜, 내용을 보여주는 앱 화면."
+                    alt="라멥 이벤트 상세 화면. 카키코우죠 행사 장소와 날짜, 내용을 보여주는 앱 화면."
                     loading="lazy"
                   />
                 </div>
@@ -299,7 +299,7 @@ export default function App() {
               <div className="download-visual">
                 <img
                   src="assets/ramap-product-hero.png"
-                  alt="랭킹·지도·이벤트 화면을 담은 라맵 제품 이미지"
+                  alt="랭킹·지도·이벤트 화면을 담은 라멥 제품 이미지"
                   width={1672}
                   height={941}
                   loading="lazy"
@@ -309,7 +309,7 @@ export default function App() {
                 <h2 id="download-title">
                   다음 라멘집
                   <br />
-                  라맵에서 찾으세요.
+                  라멥에서 찾으세요.
                 </h2>
                 <p>대한민국 라멘집을 한곳에서 찾아보세요.</p>
                 <div className="download-actions">
