@@ -155,10 +155,6 @@ button:focus-visible {
   box-shadow: none;
 }
 
-.store-button--compact .store-symbol {
-  font-size: 1.25rem;
-}
-
 .store-button--compact .store-copy small {
   font-size: 0.48rem;
 }
@@ -167,9 +163,11 @@ button:focus-visible {
   font-size: 0.8rem;
 }
 
-.store-symbol {
-  font-size: 1.75rem;
-  line-height: 1;
+.store-icon {
+  flex: 0 0 auto;
+  width: 28px;
+  height: 28px;
+  fill: currentColor;
 }
 
 .store-copy {
@@ -188,6 +186,12 @@ button:focus-visible {
   font-size: 1.05rem;
   line-height: 1.1;
   letter-spacing: -0.04em;
+  white-space: nowrap;
+}
+
+.store-button--compact .store-icon {
+  width: 20px;
+  height: 20px;
 }
 
 .hero {
@@ -272,12 +276,6 @@ button:focus-visible {
   flex-wrap: wrap;
   gap: 16px;
   margin-top: 32px;
-}
-
-.platform-note {
-  color: var(--soft-muted);
-  font-size: 0.78rem;
-  font-weight: 650;
 }
 
 .hero-points {
@@ -782,10 +780,6 @@ button:focus-visible {
 
 .download-copy > p {
   color: rgb(255 255 255 / 78%);
-}
-
-.download-copy .platform-note {
-  color: rgb(255 255 255 / 72%);
 }
 
 .download-actions {

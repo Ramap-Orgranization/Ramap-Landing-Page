@@ -1,4 +1,5 @@
 const appStoreUrl = "https://apps.apple.com/kr/app/%EB%9D%BC%EB%A7%B5/id6797046935";
+const googlePlayUrl = "https://play.google.com/store/apps/details?id=com.peto.ramap";
 
 
 const navigationItems = [
@@ -41,21 +42,35 @@ const exploreFeatures = [
   },
 ];
 
-function StoreButton({ compact = false }: { compact?: boolean }) {
+function StoreButton({
+  store = "app-store",
+  compact = false,
+}: {
+  store?: "app-store" | "google-play";
+  compact?: boolean;
+}) {
+  const isAppStore = store === "app-store";
+
   return (
     <a
       className={compact ? "store-button store-button--compact" : "store-button"}
-      href={appStoreUrl}
+      href={isAppStore ? appStoreUrl : googlePlayUrl}
       target="_blank"
       rel="noreferrer"
-      aria-label="App Store에서 라맵 다운로드"
+      aria-label={isAppStore ? "App Store에서 라맵 다운로드" : "Google Play에서 라맵 다운로드"}
     >
-      <span className="store-symbol" aria-hidden="true">
-        
-      </span>
+      {isAppStore ? (
+        <svg className="store-icon store-icon--apple" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 13.25 3.51 3.86 9.05 3.5c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.96-2.53 4.29zM12.03 3.5C11.88 1.27 13.69-.56 15.78-.74c.29 2.17-1.96 4.07-3.75 4.24z" />
+        </svg>
+      ) : (
+        <svg className="store-icon store-icon--play" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M3.5 2.5 20.5 12l-17 9.5V2.5Z" />
+        </svg>
+      )}
       <span className="store-copy">
-        <small>Download on the</small>
-        <strong>App Store</strong>
+        <small>{isAppStore ? "Download on the" : "GET IT ON"}</small>
+        <strong>{isAppStore ? "App Store" : "Google Play"}</strong>
       </span>
     </a>
   );
@@ -104,7 +119,7 @@ export default function App() {
               </p>
               <div className="hero-actions">
                 <StoreButton />
-                <span className="platform-note">Android 출시 준비 중</span>
+                <StoreButton store="google-play" />
               </div>
               <ul className="hero-points" aria-label="라맵의 주요 기능">
                 <li>
@@ -302,7 +317,7 @@ export default function App() {
                 <p>대한민국 라멘집을 한곳에서 찾아보세요.</p>
                 <div className="download-actions">
                   <StoreButton />
-                  <span className="platform-note">Android 출시 준비 중</span>
+                  <StoreButton store="google-play" />
                 </div>
               </div>
             </div>
