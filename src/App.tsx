@@ -242,7 +242,7 @@ export default function App() {
                 라멘집은?
               </h2>
               <p className="ranking-description">
-                지도에서 찾은 라멘집을 지역별 인기 순위로 확인해 보세요. 다음
+                지역별로 사용자들이 선택한 순위를 확인해 보세요.
               </p>
             </div>
           </div>
