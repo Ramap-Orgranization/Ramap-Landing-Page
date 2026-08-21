@@ -6,7 +6,7 @@ const navigationItems = [
   { href: "#map", label: "지도" },
   { href: "#discover", label: "탐색" },
   { href: "#ranking", label: "랭킹" },
-  { href: "#events", label: "이벤트" },
+  { href: "#events", label: "새소식" },
 ];
 
 const mapFeatures = [
@@ -19,26 +19,21 @@ const mapFeatures = [
     description: "쇼유·시오·이에케 등 좋아하는 장르로 골라보세요.",
   },
   {
-    title: "가기 전 필요한 정보까지",
-    description: "운영시간과 웨이팅 정보를 한 번에 확인하세요.",
+    title: "가기 전 필요한 소식까지",
+    description: "운영 변동은 새소식에서 미리 확인하세요.",
   },
 ];
 
 const exploreFeatures = [
   {
     number: "01",
-    title: "동네를 고르고",
-    description: "가고 싶은 지역을 먼저 골라보세요.",
+    title: "운영 상태를 확인하고",
+    description: "임시 휴무와 조기 마감 등 운영 변동을 먼저 확인하세요.",
   },
   {
     number: "02",
-    title: "라멘집을 둘러보고",
-    description: "지도에 모인 라멘집을 비교하며 다음 가게를 찾아보세요.",
-  },
-  {
-    number: "03",
-    title: "오늘의 한 그릇을 고르고",
-    description: "여러 검색창을 오가지 않고 라멥에서 바로 결정하세요.",
+    title: "매장 정보를 살펴보고",
+    description: "장르, 주소, 영업시간과 브레이크타임을 한곳에서 확인하세요.",
   },
 ];
 
@@ -97,6 +92,7 @@ export default function App() {
 
           <div className="header-actions">
             <StoreButton compact />
+            <StoreButton store="google-play" compact />
           </div>
         </div>
       </header>
@@ -118,17 +114,6 @@ export default function App() {
                 <StoreButton />
                 <StoreButton store="google-play" />
               </div>
-              <ul className="hero-points" aria-label="라멥의 주요 기능">
-                <li>
-                  <span>01</span> 전국 라멘집 지도
-                </li>
-                <li>
-                  <span>02</span> 지역·장르별 탐색
-                </li>
-                <li>
-                  <span>03</span> 랭킹과 이벤트
-                </li>
-              </ul>
             </div>
 
             <figure className="hero-device">
@@ -184,9 +169,9 @@ export default function App() {
               <div>
                 <p className="eyebrow">02 / EXPLORE</p>
                 <h2 id="discover-title">
-                  오늘은 어느 동네에서
+                  방문 전 필요한 매장 정보를
                   <br />
-                  라멘을 먹을까요?
+                  한눈에 확인하세요.
                 </h2>
               </div>
             </div>
@@ -210,8 +195,8 @@ export default function App() {
               <figure className="explore-visual">
                 <div className="screen-frame screen-frame--bottom-sheet">
                   <img
-                    src="assets/ramap-physical-current.png"
-                    alt="라멥 지도 위에 실제 매장 상세 바텀시트가 열린 화면."
+                    src="assets/store-detail-device.png"
+                    alt="라멥 매장 상세 화면. 임시 휴무 배지와 장르, 주소·전화, 영업시간, 브레이크타임, 정기휴무, 대기 및 Instagram·카카오맵·네이버지도·제보하기가 표시되어 있다."
                     loading="lazy"
                   />
                 </div>
@@ -234,7 +219,7 @@ export default function App() {
             <div className="section-copy section-copy--light">
               <p className="eyebrow">03 / RANKING</p>
               <h2 id="ranking-title">
-                이 동네에서 가장 많이 찾는
+                사람들이 가장 많이 선택한
                 <br />
                 라멘집은?
               </h2>
@@ -249,16 +234,16 @@ export default function App() {
           <div className="page-shell">
             <div className="section-heading section-heading--events">
               <div>
-                <p className="eyebrow">04 / EVENTS</p>
+                <p className="eyebrow">04 / NEWS</p>
                 <h2 id="events-title">
-                  새로운 메뉴와 이벤트 소식을
+                  다양한 소식을
                   <br />
-                  한곳에서 확인하세요.
+                  한 곳에서 확인하세요.
                 </h2>
               </div>
               <p>
-                진행 중인 행사부터 곧 시작될 한정 메뉴까지, 라멘집의 소식을
-                한곳에서 확인하세요.
+                임시 휴무와 영업 변동부터 이벤트·신메뉴·리뉴얼까지, 라멘집의
+                새소식을 한곳에서 확인하세요.
               </p>
             </div>
 
@@ -266,27 +251,27 @@ export default function App() {
               <figure className="screen-card">
                 <div className="screen-frame screen-frame--event">
                   <img
-                    src="assets/events-device.png"
-                    alt="라멥 이벤트 화면. 여름 한정, 오늘 진행 중, 진행 예정 이벤트가 보이는 현재 앱 화면."
+                    src="assets/operating-status-device.png"
+                    alt="라멥 운영 변동 목록 화면. 임시 휴무와 영업 관련 새소식이 목록으로 표시되어 있다."
                     loading="lazy"
                   />
                 </div>
                 <figcaption>
                   <span>01</span>
-                  진행 중 · 진행 예정
+                  운영 변동
                 </figcaption>
               </figure>
               <figure className="screen-card screen-card--offset">
                 <div className="screen-frame screen-frame--event">
                   <img
-                    src="assets/ramap-kakikoujo-event-detail.png"
-                    alt="라멥 이벤트 상세 화면. 카키코우죠 행사 장소와 날짜, 내용을 보여주는 앱 화면."
+                    src="assets/news-device.png"
+                    alt="라멥 새소식 목록 화면. 이벤트·신메뉴·리뉴얼 소식이 목록으로 표시되어 있다."
                     loading="lazy"
                   />
                 </div>
                 <figcaption>
                   <span>02</span>
-                  이벤트 상세
+                  이벤트 · 신메뉴 · 리뉴얼
                 </figcaption>
               </figure>
             </div>
