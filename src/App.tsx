@@ -93,6 +93,15 @@ export default function App() {
           <div className="header-actions">
             <StoreButton compact />
             <StoreButton store="google-play" compact />
+            <a
+              className="instagram-link"
+              href="https://www.instagram.com/ramap_official_kr/"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Instagram에서 라멥 보기"
+            >
+              <img src="assets/instagram-icon.png" alt="" />
+            </a>
           </div>
         </div>
       </header>
