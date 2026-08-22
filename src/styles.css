@@ -305,6 +305,18 @@ button:focus-visible {
   margin-top: 32px;
 }
 
+.hero-actions .instagram-link,
+.download-actions .instagram-link {
+  width: 56px;
+  height: 56px;
+}
+
+.hero-actions .instagram-link img,
+.download-actions .instagram-link img {
+  width: 56px;
+  height: 56px;
+}
+
 .hero-device {
   position: relative;
   display: flex;
