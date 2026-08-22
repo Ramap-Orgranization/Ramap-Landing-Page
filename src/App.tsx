@@ -314,6 +314,9 @@ export default function App() {
               개인정보처리방침
             </a>
             <a href="mailto:uni070@naver.com">문의하기</a>
+            <a href="https://www.instagram.com/ramap_official_kr/" target="_blank" rel="noreferrer">
+              인스타그램
+            </a>
           </div>
           <p className="copyright">© Ramap. All rights reserved.</p>
         </div>
