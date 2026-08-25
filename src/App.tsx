@@ -95,7 +95,7 @@ export default function App() {
             <StoreButton store="google-play" compact />
             <a
               className="instagram-link"
-              href="https://www.instagram.com/ramap_official_kr/"
+              href="https://www.instagram.com/ramap.app"
               target="_blank"
               rel="noreferrer"
               aria-label="Instagram에서 라멥 보기"
@@ -124,7 +124,7 @@ export default function App() {
                 <StoreButton store="google-play" />
                 <a
                   className="instagram-link"
-                  href="https://www.instagram.com/ramap_official_kr/"
+                  href="https://www.instagram.com/ramap.app"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="Instagram에서 라멥 보기"
