@@ -320,7 +320,7 @@ export default function App() {
                   <StoreButton store="google-play" />
                   <a
                     className="instagram-link"
-                    href="https://www.instagram.com/ramap_official_kr/"
+                    href="https://www.instagram.com/ramap.app"
                     target="_blank"
                     rel="noreferrer"
                     aria-label="Instagram에서 라멥 보기"
@@ -341,7 +341,7 @@ export default function App() {
               개인정보처리방침
             </a>
             <a href="mailto:uni070@naver.com">문의하기</a>
-            <a href="https://www.instagram.com/ramap_official_kr/" target="_blank" rel="noreferrer">
+            <a href="https://www.instagram.com/ramap.app" target="_blank" rel="noreferrer">
               인스타그램
             </a>
           </div>
